@@ -1,0 +1,12 @@
+fontes:
+
+corpo do texto: Manjari 18px regular
+titulos: IBM Plex Sans Li... 60px regular
+super-titulos IBM Plex Sans T... italic 160px
+subtitulo: Manjari bold 30px (excessao pg planos 40px);
+
+cores:
+
+laranja: ff7200
+amarelo claro: ffee9e
+amarelo escuro: f7b70b

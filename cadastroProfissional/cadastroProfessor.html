@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100i,300|Manjari:400,700&display=swap"
+        rel="stylesheet">
+    <title>Academia Hard - Emagrecimento, Saúde e Bem-Estar | Petrópolis-RJ</title>
+    <!--[if IE]>
+   
+   <style type="text/css">
+
+   .color-block { 
+       background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000); 
+       zoom: 1;
+    } 
+
+    </style>
+
+<![endif]-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container_logo">
+                <a class="clear">
+                    <img src="../img/logo.png" alt="Logo">
+                    <h1 class="logo-txt">Academia Hard | <span class="admin">Admin</span></h1>
+                </a>
+            </div>
+            <nav class="menu-nav">
+                <span class="hb-icon" onclick="mostraMenu()">&#9776;</span>
+                <ul class="hb-menu">
+                    <div class="login-user" onclick="ativaModal()">
+                        <p><a href="#">Login</a></p>
+                    </div>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <! -- fim da header --->
+
+        <!---- inicio da section cadastro ---->
+        <section class="container pg-cadastro">
+            
+            <form action="" class="cadastro clear">
+                    <h1 class="titulo-sessao cadastro">#Dados Professor</h1>
+                <div class="clear">
+                    <label class="lb-lf">Nome:
+                        <input type="text" placeholder="Ex.: José Luiz" id="nome" />
+                    </label>
+                    <label class="lb-rt">Sobrenome:
+                        <input type="text" placeholder="Ex.: José Luiz" id="sobrenome" />
+                    </label>
+                </div>
+                <div class="clear">
+                    <label class="lb-lf dataNC" for="dataNascimento">Data Nascimento:
+                        <input type="date" id="dataNascimento" name="data" min="01-01-1900" max="date()">
+                    </label>
+                    <div class="lb-rt clear sexobox">
+                        <h4 class="lb-h4">Sexo:</h4>
+                        <label for="sexo" class="lb-lf radio clear">M:
+                            <input type="radio" name="sexo" id="masculino" value="1">
+                        </label>
+                        <label for="sexo" class="lb-lf radio clear">F:
+                            <input type="radio" name="sexo" id="Feminino" value="2">
+                        </label>
+                     </div>
+                </div>
+
+                <div class="clear">
+                    <label class="lb-lf">E-mail:
+                        <input type="email" name="email" id="email" placeholder="Ex.:Josecarlos@gmail.com" />
+                    </label>
+                    <label class="lb-rt"> CPF:
+                        <input type="text" name="cpf" id="cpf" placeholder="Ex.: 556.552.654-45">
+                    </label>
+                </div>
+                <div class="clear">
+                        <label for="telefone" class="lb-lf">Telefone:
+                            <input type="text" id="telefone" placeholder="Ex.: 24 2233-5566">
+                        </label>
+                        <label for="celular" class="lb-rt">Celular:
+                            <input type="text" id="celular">
+                        </label>
+                    </div>
+
+                <div class="clear">
+                    <label for="senha" class="lb-lf">Senha:
+                        <input type="password" id="senha" placeholder="Ex.: 123as#">
+                    </label>
+                    <label for="confirmaSenha" class="lb-rt">Confirma Senha:
+                        <input type="password" id="confirmaSenha">
+                    </label>
+                    <label>Disciplina:&nbsp;&nbsp;
+                        <select name="disciplina" id="disciplina" class="disciplina">
+                            <option value="musculacao">Musculação</option>
+                            <option value="pilates">Pilates</option>
+                            <option value="jiu-jtsu">Jiu-Jitsu</option>
+                            <option value="jiu-jtsu">boxe</option>
+                        </select>
+                    </label>
+                </div>
+            
+            <h1 class="titulo-sessao cadastro editah1">#Dados Endereço</h1>
+           
+                <div>
+                    <label>Cep:
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value);" /></label>
+                    <div class="clear">
+                        <label class="lb-lf lb-rua">Rua:
+                            <input name="rua" type="text" id="rua" size="60" />
+                        </label>
+                        <label class="lb-rt lb-num">Número:
+                            <input name="numero" type="text" id="num" size="4" maxlength="4">
+                        </label>
+                        <label class="lb-rt lb-comple">Complemento:
+                            <input name="complemento" type="text" id="complemento" size="50">
+                        </label>
+                    </div>
+                    <label>Bairro:
+                        <input name="bairro" type="text" id="bairro" size="40" /></label>
+                    <label>Cidade:
+                        <input name="cidade" type="text" id="cidade" size="40" /></label>
+                    <div class="clear">
+                        <label class="uf lb-lf">Estado:
+                            <input name="uf" type="text" id="uf" size="2" />
+                        </label>
+                        <button type="button" class="lb-rt btn-cadastro">Enviar</button>
+                    </div>
+                </div>
+                
+            </form>
+
+
+        </section>
+
+        <footer class="footer">
+            <div class="container clear">
+                <p>&copy; Copyright 2019 - Academia Hard | Todos os Direitos Reservados </p>
+            </div>
+        </footer>
+        <!-- fim da footer-->
+        <div id="atvModal" class="lgModal">
+            <div class="containerModal">
+                <div class="caixaModal clear">
+                    <button type="button" class="closeModal" onclick="fechaModal()">x</button>
+                    <label for="lgNome" id="lgNome">Email:
+                        <input type="text" name="lgNome" id="inpNome" class="inpNome">
+                    </label>
+                    <label for="lgKey" id="lgKey">Senha:
+                        <input type="password" name="lgKey" id="inpKey" class="inpKey">
+                    </label>
+                    <button type="button" id="lgBtn" class="btnModal">Enviar</button>
+                    <div class="cdUser"><a href="cadastro/cadastro.html">Cadastre-se</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Area dos scripts --------------------------------------------->
+        <script src="../js/script.js"></script>
+        <script src="apiViaCep.js"></script>
+</body>
+
+</html>

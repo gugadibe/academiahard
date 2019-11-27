@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100i,300|Manjari:400,700&display=swap"
+        rel="stylesheet">
+    <title>Academia Hard - Emagrecimento, Saúde e Bem-Estar | Petrópolis-RJ</title>
+    <!--[if IE]>
+   
+   <style type="text/css">
+
+   .color-block { 
+       background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000); 
+       zoom: 1;
+    } 
+
+    </style>
+
+<![endif]-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container_logo">
+                <a href="#" class="clear">
+                    <img src="img/logo.png" alt="Logo">
+                    <h1 class="logo-txt">Academia Hard</h1>
+                </a>
+            </div>
+            <nav class="menu-nav">
+                <span class="hb-icon" onclick="mostraMenu()">&#9776;</span>
+                <ul class="hb-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#atividades">Atividades</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <div class="login-user" onclick="ativaModal()">
+                        <p><a href="#">Login</a></p>
+                    </div>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- Fim da Header-->
+
+    <!-- Inicio da Intro-->
+    <section class="introducao" id="home">
+        <div class="container">
+            <div class="titulo-xl">
+                <img src="img/seja.png" alt="">
+            </div>
+            <div class="p-group-intro">
+                <p>
+                    A vida é um constante recomeço. Não se dê por derrotado e siga adiante. As pedras que hoje
+                    atrapalham sua caminhada amanhã enfeitarão a sua estrada.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- fim da intro-->
+
+    <!-- inicio da section sobre nos-->
+    <section class="sobre-nos container" id="sobre">
+        <h2 class="titulo-sessao">Sobre Nós</h2>
+        <div class="img-sobre">
+            <img src="img/nos.jpg" alt="Sobre nós">
+        </div>
+        <div class="p-group-sobre">
+            <h2 class="subtitulo">Nossa História</h2>
+            <p>
+                A certificação de metodologias que nos auxiliam a lidar com o julgamento imparcial das eventualidades
+                assume
+                importantes posições no estabelecimento dos níveis de motivação departamental.
+            </p>
+            <ul class="sobre-lista">
+                <li>Foco</li>
+                <li>Disciplina</li>
+                <li>Organização</li>
+                <li>Respeito</li>
+                <li>Eficiência</li>
+            </ul>
+        </div>
+    </section>
+    <!--  fim da section introduçao-->
+
+    <!-- inicio da section atividade-->
+    <section class="atividade" id="atividades">
+        <div class="container">
+            <div class="atividade-img">
+                <img src="img/move.png" alt="">
+            </div>
+            <ul class="atividade-lista container">
+                <li>
+                    <img src="img/icons/peso.png" alt="peso">
+                </li>
+                <li>
+                    <img src="img/icons/corda.png" alt="corda">
+                </li>
+                <li>
+                    <img src="img/icons/tenis.png" alt="peso">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- fim da section atividades-->
+
+    <!-- inicio da section planos-->
+    <section class="container" id="planos">
+        <h2 class="titulo-sessao">Nossos Planos</h2>
+        <div class="planos">
+            <div class="planos-item">
+                <h2 class="titulo-item">Mensal</h2>
+                <ul>
+                    <li>Musculação</li>
+                    <li>Artes Marciais</li>
+                    <li>Pilates</li>
+                    <li>Meditação</li>
+                    <li>Power Yoga</li>
+                </ul>
+                <p><sup>R$</sup>60,00</p>
+                <a href="#" class="btn">Comprar</a>
+            </div>
+            <div class="planos-item dir">
+                <h2 class="titulo-item">Anual</h2>
+                <ul>
+                    <li>Musculação</li>
+                    <li>Artes Marciais</li>
+                    <li>Pilates</li>
+                    <li>Meditação</li>
+                    <li>Power Yoga</li>
+                </ul>
+                <p><sup>R$</sup>600,00</p>
+                <a href="#" class="btn dir">Comprar</a>
+            </div>
+        </div>
+    </section>
+    <!-- fim da section planos-->
+
+    <!-- inicio da section contato-->
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2 class="titulo-contato">#Entre em contato!</h2>
+            <form action="" class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" />
+                <label for="email">E-mail:</label>
+                <input type="email" name="" id="email" />
+                <label for="mensagem">Digite sua mensagem:</label>
+                <textarea name="" id="mensagem" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <div class="contato-box clear">
+                <div class="endereco">
+                    <h2 class="subtitulo">Nosso Endereço</h2>
+                    <p>Rua das Arcas, nº 555</p>
+                    <p>Petrópolis, Rio de Janeiro</p>
+                    <p>contato@academiahard.com</p>
+                    <p>+55 24 9999-5522</p>
+                </div>
+                <div class="socialmedia">
+                    <h2 class="subtitulo">Redes Sociais</h2>
+                    <div class="icons-social">
+                        <a href="#" class="img-icon"><img src="img/icons/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="img/icons/instagram.png" alt="instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim da section contato-->
+    <!-- inicio da footer-->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Copyright 2019 - Academia Hard | Todos os Direitos Reservados </p>
+        </div>
+    </footer>
+    <div id="atvModal" class="lgModal">
+        <div class="containerModal">
+            <div class="caixaModal clear">
+                <button type="button" class="closeModal" onclick="fechaModal()">x</button>
+                <label for="lgNome" id="lgNome">Email:
+                    <input type="text" name="lgNome" id="inpNome" class="inpNome">
+                </label>
+                <label for="lgKey" id="lgKey">Senha:
+                    <input type="password" name="lgKey" id="inpKey" class="inpKey">
+                </label>
+                <button type="button" id="lgBtn" class="btnModal">Enviar</button>
+                <div class="cdUser"><a href="cadastro/cadastro.html">Cadastre-se</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- fim da footer-->
+
+    <!-- Area dos scripts --------------------------------------------->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

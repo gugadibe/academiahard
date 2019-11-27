@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100i,300|Manjari:400,700&display=swap"
+        rel="stylesheet">
+    <title>Academia Hard | Admin</title>
+    <!--[if IE]>
+   
+   <style type="text/css">
+
+   .color-block { 
+       background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000); 
+       zoom: 1;
+    } 
+
+    </style>
+
+<![endif]-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container_logo">
+                <a class="clear">
+                    <img src="../img/logo.png" alt="Logo">
+                    <h1 class="logo-txt">Academia Hard | <span class="admin">Admin</span></h1>
+                </a>
+            </div>
+            <nav class="menu-nav">
+                <span class="hb-icon" onclick="mostraMenu()">&#9776;</span>
+                <ul class="hb-menu">
+                    <div class="login-user" onclick="ativaModal()">
+                        <p><a href="#">Login</a></p>
+                    </div>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <! -- fim da header --->
+
+        <!---- inicio da section cadastro ---->
+        <section class="container section_admin">
+            
+            <form action="" class="cadastro form_admin">
+                    <h1 class="titulo-sessao titulo-admin">#Painel Admin</h1>
+                    <div class="box_admin">
+                        <label>Usuário:
+                            <input name="uf" type="text" id="uf" size="2" />
+                        </label>
+                        <label >Senha:
+                                <input name="senha" type="password" id="senha"  maxlength="12" />
+                        </label>
+                        <button type="button" class="btn-cadastro btn-admin">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- fim da footer-->
+        <!-- Area dos scripts --------------------------------------------->
+        <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, p, blockquote, a, address, big, cite, em, img, q, 
+small, sub,  ul, li,
+fieldset, form, label, article, aside, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+img{
+    display: block;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}

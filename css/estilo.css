@@ -1,0 +1,1302 @@
+body{
+    font-family: 'Manjari', sans-serif;
+    display: block;
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+section{
+    padding: 60px 0;
+}
+p{
+    font-size:1em ;
+    -webkit-font-smoothing: always;
+}
+.container {
+	max-width: 960px;
+    margin: 0 auto;
+}
+.container::after, .container::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+.clear::after, .clear::before{
+    	content: '';
+	display: table;
+	clear: both;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #141414;
+    padding: 10px;
+    z-index: 1;
+}
+.container_logo{
+    float: left;
+    padding-left: 5px;
+}
+.container_logo img{
+    float: left;
+    display: block;
+    width:40px;
+    height: 32px;
+}
+.container_logo h1{
+    float: right;
+    font-size:1.125em;
+    font-weight: bold;
+    color: #fff;
+    padding: 11px 20px 0px 20px;
+}
+
+.menu-nav{
+    text-align: right;
+    max-width: 100%;
+   
+}
+/* admin cadstro professores */
+.admin{
+    font-size: .8em;
+    font-style: italic;
+}
+
+
+/* ----------------------------*/
+.menu-nav li{
+    display: inline-block;
+}
+.menu-nav li a{
+    display: block;
+    padding:10px;
+    color: #fff;
+}
+.login-user{
+    float: right;
+    margin-left: 30px;
+    text-align: right;
+    border-left: 1px solid;
+    border-image: linear-gradient(10deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+    padding-left: 10px;
+}
+.login-user a{
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+.menu-nav span{
+    font-size: 2rem;
+    color:#fff
+}
+.hb-icon{
+    display: none;
+}
+.classeAtiva{
+    border-bottom: 3px solid;
+    border-image: linear-gradient(10deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+ 
+}
+/*----------------------- fim da header e nav--------------------------*/
+
+/* ---------- inicio da introducao --------------------*/
+.introducao{
+    height: auto;
+    background-size: cover;
+    background-image: url("../img/bg-intro.jpg");
+    background-repeat: no-repeat;
+    margin-top: 57px;
+}
+.introducao div{
+    padding-left: 25px;
+}
+.titulo-xl{
+    max-width: 70%;
+}
+.titulo-xl img{
+    width: 100%;
+}
+.p-group-intro{
+    font-size: 1em;
+    max-width: 72%;
+    padding-top: 35px;
+    margin-left: 5px;
+    letter-spacing: .1rem;
+    line-height: 23px;
+    color: #fff;
+    font-weight: normal;
+}
+/* ------------------- fim da introducao---------------------*/
+
+/* -------------- inicio da sobre nos ----------------------*/
+
+.titulo-sessao{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: .1rem;
+    margin-bottom: 50px;
+}
+.titulo-sessao::after{
+    content: '';
+    display: block;
+    border: 2px solid;
+    width: 120px;
+    margin: 10px  auto;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+}
+.img-sobre{
+    float: left;
+    max-width: 50%;
+    margin: 0 10px;
+}
+.img-sobre img{
+    max-width: 100%;
+}
+.p-group-sobre{
+    float: left;
+    max-width: 40%;
+    margin: 10px 20px;
+    letter-spacing: .1em;
+    line-height: 23px;
+}
+.p-group-sobre p{
+    margin-bottom: 6%;
+}
+.subtitulo{
+    font-size: 1.4em;
+    font-family: 'Manjari';
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.subtitulo::after{
+    content: '';
+    display: block;
+    border: 2px solid;
+    width: 40px;
+    margin: 5px 0;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+}
+.sobre-lista li{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: .04em;
+}
+.sobre-lista li::before{
+    content: '\27B2';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    color: rgb(252,84,10);
+}
+/* ------------ fim da sobre nós ---------------*/
+
+/* ------------ inicio da atividade ---------*/
+.atividade{
+    height: auto;
+    background-image: url(../img/bg-atividade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.atividade-img{
+    max-width: 100%;
+}
+.atividade-img img{
+    width: 100%;
+    margin-top: 50px;
+}
+.atividade-lista{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.atividade-lista li{
+    border:5px solid;
+    margin: 20px 10px 50px 10px;
+    padding: 5%;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+    
+}
+.atividade-lista img{
+    max-width: 100%;
+}
+
+/*----------- fim da atividade--------------*/
+
+/*-------------- inicio nossos planos-------------*/
+
+.planos {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.planos::after, .planos::before{
+    display: table;
+    content: '';
+    clear: both;
+}
+.planos-item{
+    width: 350px;
+    margin-right: 3%;
+    padding: 40px 10px 0 10px;
+    text-align: center;
+    border: 4px solid;
+    border-image: linear-gradient(90deg, rgb(255,122,15), rgb(247 ,183,11));
+    border-image-slice: 1;
+    display: inline-block;
+    position: relative;
+ 
+}
+.planos-item.dir{
+    border-image: linear-gradient(90deg,rgb(247 ,183,11), rgb(255,122,15));
+    border-image-slice: 1;
+    margin-right: 0;
+}
+.planos-item.dir::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -1px;
+    right: 5px;
+    background: url(../img/icons/medalha.png) center;
+}
+.planos-item li{
+    font-size:1.3rem ;
+    margin-top: 10px;
+}
+h2.titulo-item{
+    font-size: 2.5rem;
+    margin-bottom: 40px; 
+}
+
+.titulo-item::after{
+    content: '';
+    display: block;
+    border: 2px solid;
+    width: 40px;
+    margin: 0 auto;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+}
+sup{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+.planos-item p{
+    font-size: 3.2rem;
+    margin-top: 40px;;
+}
+.btn {
+    margin: 30px auto;
+    display: inline-block;
+    border: 4px solid ;
+    padding: 17px 10px 10px 10px;
+    width: 240px;
+    border-image: linear-gradient(90deg, rgb(255,122,15), rgb(247 ,183,11));
+    border-image-slice: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #141414;
+    cursor: pointer;
+}
+.btn.dir{
+    border-image: linear-gradient(90deg,rgb(247 ,183,11), rgb(255,122,15));
+    border-image-slice: 1;
+}
+/* ----------------- fim dos nossos planos ---------------*/
+
+/*----------------- inicio do contato ------------*/
+.contato{
+    background-image: url(../img/bg-contato.jpg);
+    background-size: cover;
+    height: auto;
+}
+.titulo-contato{
+    font-size:3.75rem;
+    font-family: 'IBM Plex Sans';
+    font-style: italic;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 5px;
+    margin-bottom: 40px;
+}
+.formulario{
+    margin: 30px 10px;
+    float: left;
+    width: 50%;
+}
+.formulario input{
+    display: block;
+    margin: 5px 0 20px 0;
+    width: 100%;
+    padding: 10px ;
+    background: rgba(19 , 19 , 19, 0.5);
+    border: 3px solid;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+    color: rgba(255 , 255 , 255, 70%);
+    font-size: 1.125em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.formulario label{
+    color: #fff;
+}
+.formulario textarea{
+    display: block;
+    width: 100%;
+    margin: 5px 0 0 0;
+    background: rgba(19 , 19 , 19, 0.5);
+    border: 3px solid;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+    color: rgba(255 , 255 , 255, 70%);
+    font-size: 1.125em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-y: hidden;
+}
+button.btn{
+    background: rgba(19 , 19 , 19, 0.5);
+    color: #fff;
+  
+    float: right;
+    font-family: 'Manjari';
+    letter-spacing: .1rem;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+}
+.contato-box{
+    float: left;
+    max-width: 40%;
+    margin: 30px 0 30px 40px;
+}
+
+.contato-box h2, .contato-box p{
+    color: #fff;
+}
+.contato-box h2{
+    margin-top: 10px;
+}
+.endereco p{
+    line-height: 25px;
+    letter-spacing: .1em;
+}
+
+.endereco p:nth-child(4) {
+   margin-top: 40px;;
+}
+.socialmedia{
+    margin-top: 50px
+}
+.icons-social{
+    width: 155px;
+}
+.icons-social::after, .icons-social::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.icons-social a{
+    display: block;
+    float: right;
+    margin: 10px;
+}
+.icons-social img{
+    width: 35px;
+}
+
+/* ------------- fim do contato ------------*/
+
+
+/*------------ FOOTER ----------------*/
+.footer{
+    background: #FC540A;
+    padding: 30px 10px 20px 10px;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*------------- css pagina cadastro Usuario -------------------*/
+
+.cadastro{
+    width: 90%;
+    background: transparent;
+    margin: 20px auto;
+}
+h1.cadastro{
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 30px 50px 50px 0;
+}
+h1.cadastro::after{
+    margin: 10px 5px;
+    width: 40px;
+}
+.cadastro input{
+    padding: 10px;
+    display: block;
+    margin:5px 0 15px 0;
+    background: transparent;
+    width: 100%;
+    border: 2px solid rgba(255,122,15,50%);
+    border-radius: 3px;
+}
+.pg-cadastro form:nth-child(3)  {
+    border-top: 2px solid;
+    border-image: linear-gradient(90deg, rgba(12, 9, 8, 0.5), rgba(158, 158, 158, 0.5), rgba(255, 255, 255, 0.8));
+    border-image-slice: 1;
+    padding-top: 20px;
+}
+.btn-cadastro{
+    padding: 10px;
+    display: block;
+    margin:15px 0 15px 0;
+    background: transparent;
+    width: 20% !important;
+    border: 2px solid rgba(255,122,15,50%);
+    border-radius: 3px;
+}
+.uf input{
+    max-width: 25%;
+}
+.lb-lf{
+    float: left;
+    width: 47%;
+}
+.lb-rt{
+    width: 47%;
+    float: right;
+}
+.lb-rua{
+    width: 50%;
+}
+.lb-num{
+    width: 10%;
+}
+.lb-comple{
+    width: 30%;
+    margin-right: 5%;
+}
+.sexobox{
+    width: 47%;
+    padding: 20px 0;
+}
+label.radio{
+    position: relative;
+    padding: 12px 0;
+    margin-right: 5%;
+    width: 20%;
+}
+.radio input{
+    display: inline-block;
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    top: 6px;
+    left: 10%;
+}
+.dataNC{
+    width: 47%;
+}
+.dataNC input{
+    color:rgba(12, 9, 8, 0.5)
+}
+.lb-h4{
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    color: #191919;
+    font-weight: normal;
+}
+.disciplina{
+   width: 150px;
+   font-family: 'Manjari';
+   font-size: .8em;
+   color: #191919;
+   border: 2px solid #FFBC87;
+   border-radius: 5px;
+   padding:10px 0 7px 5px;
+   appearance: none;
+}
+
+
+/*-----------------MODAL LOGIN ---------------------*/
+
+.lgModal{
+    background: rgba(0  , 0 , 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.containerModal{
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.caixaModal{
+    position: relative;
+    width: 500px;
+    background: rgba(19 , 19 , 19,.87);
+    margin: 15% auto;
+    padding: 150px 15px 15px 15px;
+    color: #fff;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+    transition: ease-in-out .4s;
+}
+.caixaModal label{
+    float: right;
+    display: block;
+    padding: 15px 20px 10px 20px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.caixaModal input{
+    margin-top: 10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 1em;
+    background:transparent;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+    color: #fff;
+}
+.caixaModal::before{
+    position: absolute;
+    top: 50px;
+    right:205px;
+    margin: auto;
+    content: '';
+    background: url('../img/icons/user-thin.png') top 10px center no-repeat;
+    background-size: 70px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+}
+.btnModal{
+    float: right;
+    padding: 17px 40px 13px;
+    margin: 15px 20px 10px 0;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+    font-family: 'Manjari';
+}
+.btnModal:hover{
+    box-shadow: rgba(255, 255, 255, 0.2) 2px 0px 10px 0px;
+}
+.closeModal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    float: right;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+    border-image-slice: 1;
+    font-size: 1em;
+    background: none;
+    text-align: center;
+}
+ .cdUser{
+     display: block;
+     float: left;
+     margin-left: 25px;
+     text-transform: uppercase;
+ }
+ .cdUser a{
+     padding: 35px 0;
+     color: #fff;
+ }
+#atvModal{
+    display: none;
+}
+#atvModal.ativo{
+    display: block;
+}
+
+.box_admin{
+    width: 60%;
+    border: 2px solid #FFBC87;
+    margin: 50px auto 0 auto;
+    padding: 80px 25px;
+    border-radius: 5px;
+}
+input.box_admin {
+    width: 100% !important;
+    border: 1px solid #FFBC87;
+}
+.box_admin label{
+ display: block;
+ margin-top: 20px;
+}
+
+h1.titulo-admin{
+    margin: 50px 0 0 0;
+    padding: 0;
+   
+}
+.btn-admin{
+    width: 100% !important;
+}
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*----------------- RESPOSIVO ---------------*/
+
+@media screen  and (max-width: 767px){
+
+/*-------------- header -----------*/
+  
+    .header{
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .hb-icon{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    .container_logo h1{
+        float: right;
+        font-size:1em;
+        font-weight: bold;
+        color: #fff;
+        padding: 10px 20px 0px 20px;
+    }
+    .hb-menu{
+        display: none;
+    }
+    .hb-menu.ativo{
+        display: block;
+        
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    .container_logo{
+        display: block;
+        text-align: center;
+        padding: 8px ;
+    }
+    .container_logo img{
+        float: left;
+        display: block;
+    }
+    .menu-nav ul{
+        background: #181818;
+        margin-top: 10px;
+        position: absolute;
+        width: 100%;
+        top: 43px;
+    }
+    
+    .menu-nav li{
+        background: #181818;
+        display: block;
+        text-align: center;
+        border-bottom:1px solid;
+        border-image: linear-gradient(90deg, rgb(252,84,10), rgb(255,238,158));
+        border-image-slice: 1;
+    }
+    .menu-nav li a{
+        padding: 15px 0 10px 0;
+        font-size: 1.2em;
+    }
+    .menu-nav li a:hover,.login-user a:hover {
+      background: rgb(36, 36, 36);
+    }
+    .login-user{
+        border: none;
+        float: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .login-user a{
+        display: block;
+        font-size: 1.1em;
+         padding: 15px 0;
+    }
+    
+    /* --------------------- fim da header mobile-----------------*/
+
+
+    /* ---------- inicio da introducao  mobile--------------------*/
+.introducao{
+  margin: 0;
+  padding: 30px 0 30px 0;
+}
+.introducao img{
+    margin-top: 20px;
+}
+.introducao div{
+    padding-left: 25px;
+}
+.titulo-xl{
+    max-width: 70%;
+}
+.titulo-xl img{
+    width: 100%;
+    margin-top: 10px;
+}
+.p-group-intro{
+    max-width: 80%;
+    
+}
+.p-group-intro p{
+    font-size: .9em;
+    line-height: 20px;
+    width: 100%;
+}
+/* ------------------- fim da introducao---------------------*/
+
+/* -------------- inicio da sobre nos mobile----------------------*/
+.sobre-nos{
+    padding-bottom: 30px;
+}
+.titulo-sessao{
+    margin: 30px 0 30px 0;
+    font-size: 2.8em;
+}
+
+.img-sobre{
+    float: left;
+    max-width: 40%;
+    margin: 0 10px;
+}
+.img-sobre img{
+    max-width: 100%;
+  
+    margin-top: 5px;
+}
+.p-group-sobre{
+    float: left;
+    max-width: 50%;
+    margin: 10px;
+    letter-spacing: .1em;
+    line-height: 20px;
+}
+.p-group-sobre p{
+    margin-bottom: 3%;
+    font-size: 1em;
+}
+.sobre-lista li{
+    margin-bottom: 2px;
+    display: inline-block;
+}
+.sobre-lista li::before{
+   margin-right: 10px;
+}
+
+/* ------------ fim da sobre nós ---------------*/
+
+/* ------------ inicio da atividade ---------*/
+.atividade{
+padding: 30px;
+}
+
+.atividade-img img{
+    margin-top: 25px;
+}
+.atividade-lista{
+    margin-top: 30px;
+}
+.atividade-lista li{
+    margin: 10px 3px 30px 3px;
+    padding: 3%;
+}
+.atividade-lista li img{
+    width: 90px;
+}
+
+
+/*----------- fim da atividade--------------*/
+
+
+/*-------------- inicio nossos planos-------------*/
+
+.planos{
+    margin-bottom: 30px;
+}
+.planos::after, .planos::before{
+    display: table;
+    content: '';
+    clear: both;
+}
+.planos-item{
+    width: 250px;
+    padding: 20px 10px 10px 10px;
+}
+
+.planos-item.dir::before{
+    width: 40px;
+    height: 40px;
+    top: -3px;
+    right: 2px;
+    background-size: 40px;
+}
+.planos-item li{
+    font-size: 1rem ;
+    margin-top: 5px;
+    font-weight: bold;
+}
+h2.titulo-item{
+    font-size: 2rem; 
+    margin-bottom: 30px; 
+}
+
+sup{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.planos-item p{
+    font-size: 2.8rem;
+    margin-top: 20px;
+}
+.btn {
+    margin: 10px auto;
+    width: 200px;
+    padding: 15px 20px 7px 20px;
+}
+
+.btn-admin{
+    width: 100% !important;
+}
+/* ----------------- fim dos nossos planos ---------------*/
+
+/*----------------- inicio do contato ------------*/
+.contato{
+    padding: 20px 0;
+}
+.titulo-contato{
+    font-size:2.8rem;
+    margin-bottom: 30px;
+    padding: 20px 0 10px 10px;
+}
+.formulario{
+    margin: 40px auto;
+    float: none;
+    display: block;
+    width: 95%;
+}
+.formulario textarea{
+    display: block;
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+button.btn{
+    margin-top: 20px;
+    float: none;
+}
+.contato-box{
+    float: none;
+    max-width: 95%;
+    margin: 30px auto;
+}
+.contato-box::after, .contato-box::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+div.endereco{
+  float: left;
+  width: 50%;
+}
+.endereco p{
+    font-size: 1em;
+}
+.endereco p:nth-child(4) {
+   margin-top: 30px;;
+}
+.socialmedia{
+    float: left;
+    width: 250px;
+    margin: 0;
+}
+
+/* ------------- fim do contato ------------*/
+
+.footer p{
+    font-size: .9em;
+    text-align: center;
+    line-height: normal;
+}
+
+/*------------- css pagina cadastro Usuario -------------------*/
+.radio input{
+    left: 20%;
+}
+
+/*-----------------MODAL LOGIN ---------------------*/
+
+.caixaModal{
+    width: 500px;
+}
+
+.box_admin{
+    width: 80%;
+}
+
+h1.titulo-admin{
+    font-size: 2.6em;
+}
+}
+
+@media screen and (max-width:599px) {
+    
+    .hb-menu{
+        display: none;
+    }
+    .container_logo img{
+        width: 30px;
+        height: 25px;
+        margin-top: 2px;
+    }
+    h1.logo-txt{
+        font-size: .8em;
+        margin-top: 2px;
+    }
+    .menu-nav span{
+        font-size: 1.5em;
+        top:13px;
+    }
+    .container_logo{
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    .menu-nav ul{
+        top: 32px;
+    }  
+    /* --------------------- fim da header mobile-----------------*/
+
+
+    /* ---------- inicio da introducao  mobile--------------------*/
+.introducao{
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+.introducao div{
+    padding: 0 10px;
+}
+.titulo-xl{
+    max-width: 90%;
+}
+
+.p-group-intro{
+    margin: 15px 0;
+    max-width: 100%; 
+}
+.p-group-intro p{
+    font-size: .7em;
+    line-height: 15px;
+    width: 100%;
+}
+/* ------------------- fim da introducao---------------------*/
+
+/* -------------- inicio da sobre nos mobile----------------------*/
+.sobre-nos{
+    padding-bottom: 15px;
+}
+.titulo-sessao{
+    margin: 15px 0 15px 0;
+    font-size: 1.9em;
+}
+.img-sobre{
+    float: none;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.img-sobre img{
+    max-width: 70%;
+    margin: 0 auto;
+    height: auto;
+    padding: 15px 0; 
+}
+.p-group-sobre{
+    float: none;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.p-group-sobre p{
+    font-size: 0.9em;
+    padding: 5px;
+}
+h2.subtitulo{
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sobre-lista li{
+    font-size: .8em;
+    margin-bottom: 2px;
+    margin: 0 auto;
+ 
+}
+
+
+/* ------------ fim da sobre nós ---------------*/
+
+/* ------------ inicio da atividade ---------*/
+.atividade{
+padding: 15px;
+}
+.atividade-img img{
+    margin-top: 20px;
+}
+.atividade-lista{
+    margin-top: 20px;
+}
+.atividade-lista li{
+    margin: 10px 3px 20px 3px;
+    padding: 3%;
+}
+.atividade-lista li img{
+    width: 50px;
+}
+
+
+/*----------- fim da atividade--------------*/
+
+
+/*-------------- inicio nossos planos-------------*/
+
+.planos{
+    display: block;
+    margin: 10px auto;
+}
+.planos-item{
+    width: 260px;
+    margin: 15px auto;
+    display: block;
+}
+.dir {
+    float: none;
+    display: block;
+    margin: 0 auto 10px auto!important;
+    
+}
+.planos-item li{
+    font-size: .9rem ;
+}
+.titulo-sessao{
+    margin: 30px 0 0 0;
+}
+h2.titulo-item{
+    font-size: 2rem; 
+}
+.btn {
+    width: 150px;
+    font-size: 1.5rem;
+}
+
+/* ----------------- fim dos nossos planos ---------------*/
+
+/*----------------- inicio do contato ------------*/
+.contato{
+    padding: 30px 0;
+}
+.titulo-contato{
+    text-align: center;
+    font-size:1.9rem;
+    margin: 0;
+    padding: 0;
+}
+.formulario textarea{
+  height: 130px;
+}
+.subtitulo{
+    font-size: 1.5em;
+}
+.subtitulo::after{
+    margin: 10px auto;
+}
+button.btn{
+    padding: 16px 0 8px 0;
+    font-size: 1.3em;
+    width: 100%;
+    margin-top: 20px;
+}
+.contato-box{
+    margin-bottom: 0px;
+}
+div.endereco{
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.endereco p{
+    font-size: 1em; 
+}
+.icons-social{
+    padding-right: 7px;
+    max-width: 100%;
+}
+.icons-social a{
+    float: none;
+    display: inline-block;
+}
+.icons-social{
+  margin: 0 auto;
+}
+.socialmedia{
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+/* ------------- fim do contato ------------*/
+
+.footer p{
+    font-size: .7em;
+    text-align: center;
+    line-height: normal;
+}
+.footer{
+    padding:15px 10px 10px;
+}
+
+/* cadastro usuarios */
+
+.cadastro{
+    width: 95%;
+    margin: 30px auto;
+}
+h1.cadastro{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+h1.cadastro::after{
+    margin: 10px auto;
+    width: 40px;
+}
+.uf input{
+    max-width: 15%;
+}
+.lb-lf{
+    float: none;
+    width: 47%;
+}
+.lb-rt{
+    width: 47%;
+    float: none;
+}
+
+.sexobox{
+    width: 10%;
+    padding: 5px 0;
+
+}
+label.radio{
+    display: inline-block;
+    padding: 12px 0 12px 0;
+    margin-right: 30px;
+    width: 30%;
+}
+.radio input{
+    display: block;
+    margin-left: 40px;
+}
+.dataNC{
+    width: 60%;
+}
+
+.btn-cadastro{
+    width: 100% !important;
+}
+
+/*-----------------MODAL LOGIN ---------------------*/
+
+.containerModal{
+    max-width: 100%;
+}
+.caixaModal{
+    width: 320px;
+}
+.caixaModal input{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 1em;
+ 
+}
+.caixaModal::before{
+    top: 50px;
+    right:115px;
+}
+.btnModal{
+    float: none;
+    display: block;
+    margin: 0px auto;
+    padding: 15px 0;
+    width: 86%;
+}
+ .cdUser{
+     width: 100%;
+     display: block;
+     float: none;
+     margin: 0 auto;
+ }
+ .cdUser a{
+     display: block;
+     color: #fff;
+     text-align: center;
+ }
+
+ .box_admin{
+    width: 90%;
+}
+
+h1.titulo-admin{
+    font-size: 2.3em;
+}
+
+}
+
+
