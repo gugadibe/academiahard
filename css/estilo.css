@@ -70,7 +70,9 @@ p{
     font-style: italic;
 }
 
-
+.img-hiden{
+	display:none;
+}
 /* ----------------------------*/
 .menu-nav li{
     display: inline-block;
