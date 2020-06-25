@@ -71,7 +71,7 @@ p{
 }
 
 .img-none{
-	z-index:-1000;
+	opacity:0;
 }
 /* ----------------------------*/
 .menu-nav li{
