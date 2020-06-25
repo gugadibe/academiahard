@@ -71,7 +71,7 @@ p{
 }
 
 .img-none{
-	overflow: hidden;
+	opacity:0;
 }
 /* ----------------------------*/
 .menu-nav li{
